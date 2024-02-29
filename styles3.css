@@ -1,0 +1,36 @@
+/* Estilos para el formulario */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd; /* Border color slightly darker */
+    border-radius: 5px;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    font-family: Arial, sans-serif;
+  }
+  
+  input, select, button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd; /* Border color slightly darker */
+    border-radius: 5px;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    font-family: Arial, sans-serif;
+  }
+  
+  button {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #ccc; /* Lighter gray on hover */
+  }
+  

@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #fff; /* Fondo blanco */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  
+  .form-container {
+    position: relative;
+    top: 50%;
+    background: rgba(255, 255, 255, 0.9); /* Fondo negro semi-transparente */
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 400px; /* Se aumenta el ancho del contenedor para acomodar los nuevos campos */
+    padding: 20px;
+    transform: translate(0, -25%);
+    text-align: center;
+    
+  }
+  
+  .form-container h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #000000; /* Título en blanco */
+    text-align: center;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000000; /* Texto de entrada en blanco */
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 3px solid #ccc; /* Borde inferior gris claro */
+    outline: none;
+    background: transparent;
+  }
+  
+  select {
+    margin-top: 10px;
+  }
+  
+  button {
+    position: relative;
+    background-color: #000; /* Fondo del botón negro */
+    color: #fff; /* Texto del botón en blanco */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    letter-spacing: 4px;
+  }
+  
+  button:hover {
+    background: #333; /* Fondo del botón al pasar el ratón gris oscuro */
+  }
+  
+  button span {
+    position: absolute;
+    display: block;
+  }
+  
+  button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #222); /* Color del primer efecto del botón gris oscuro */
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  /* Añade los estilos de animación y los demás span para el resto de los efectos del botón */
+  
+  .register-link {
+    margin-top: 10px;
+    color: #ccc; /* Color del texto del enlace gris claro */
+  }
+  
+  .register-link a {
+    color: #ddd; /* Color del enlace gris medio */
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    color: #eee; /* Color del enlace al pasar el ratón gris claro */
+  }
+  
+  /* Nuevos estilos para el formulario de registro */
+  
+  .register-link-alternative {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .register-link-alternative p {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .register-link-alternative a {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+  }
+  .icon-link {
+    color: #ccc;
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    background: #ddd;
+}

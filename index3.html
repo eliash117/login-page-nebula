@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Método de Pago</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Selección de Método de Pago</h2>
+        <form id="paymentForm">
+            <select id="paymentMethod" name="paymentMethod" onchange="showPaymentForm()" required>
+                <option value="">Seleccione Método de Pago</option>
+                <option value="tarjeta">Tarjeta de Crédito</option>
+                <option value="paypal">PayPal</option>
+                <option value="transferencia">Transferencia Bancaria</option>
+            </select>
+            <input type="text" id="username" placeholder="Nombre de Usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <div id="creditCardForm" style="display: none;">
+                <!-- Formulario para tarjeta de crédito -->
+                <input type="text" id="creditCardNumber" placeholder="Número de Tarjeta de Crédito" required>
+                <input type="text" id="expirationDate" placeholder="Fecha de Expiración" required>
+                <input type="text" id="cvv" placeholder="CVV" required>
+            </div>
+            <div id="paypalForm" style="display: none;">
+                <!-- Formulario para PayPal -->
+                <input type="email" id="paypalEmail" placeholder="Correo Electrónico de PayPal" required>
+                <input type="password" id="paypalPassword" placeholder="Contraseña de PayPal" required>
+            </div>
+            <div id="transferForm" style="display: none;">
+                <!-- Formulario para Transferencia Bancaria -->
+                <input type="text" id="bankAccount" placeholder="Número de Cuenta Bancaria" required>
+                <input type="text" id="routingNumber" placeholder="Número de Ruta" required>
+            </div>
+            <button type="button" onclick="processPayment()">Pagar</button>
+        </form>
+    </div>
+
+    <script src="main3.js"></script>
+</body>
+</html>

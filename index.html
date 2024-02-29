@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+      </head>
+      
+</head>
+<body>
+    <div class="form-container" id="loginContainer" style="display: block;">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <select id="BRANCH" name="BRANCH" required>
+                <option value="Seleccione Tienda">Seleccione Tienda</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Peru">Peru</option>
+                <option value="Colombia">Colombia</option>
+                <option value="España">España</option>
+                <option value="USA">USA</option>
+                <option value="Mexico">Mexico</option>
+                <option value="El Salador">el Salvador</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Brasil">Brasil</option>
+            </select>
+            <input type="text" id="username" placeholder="Email or Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="button" onclick="login()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+            </button>
+        </form>
+        <div class="register-link">
+            <p>Don't have an account? <a href="#" onclick="showRegistrationForm()">Register</a></p>
+        </div>
+    </div>
+
+    <div class="form-container" id="registrationContainer" style="display: none;">
+        <h2>Register</h2>
+        <form id="registrationForm" action="" method="POST">
+            <select id="BRANCH" name="BRANCH" required>
+                <option value="Seleccione Tienda">Seleccione Tienda</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Peru">Peru</option>
+                <option value="Colombia">Colombia</option>
+                <option value="España">España</option>
+                <option value="USA">USA</option>
+                <option value="Mexico">Mexico</option>
+                <option value="El Salador">el Salvador</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Brasil">Brasil</option>
+            </select>
+            <input type="text" name="nombre" placeholder="Nombre" required> <input type="date" name="fecha_nacimiento" placeholder="Fecha de Nacimiento" required> <input type="email" name="email" placeholder="Correo electrónico" required> <input type="password" name="password" placeholder="Contraseña" required>
+            <input type="password" name="confirmar_password" placeholder="Confirmar contraseña" required>
+            <button type="submit">Register</button>
+            <div class="register-link-alternative"> <p>Crear cuenta con:</p>
+<div class="register-link-alternative">
+    <div class="register-link-alternative">
+        <p>Crear cuenta con:</p>
+        <a href="#" id="registrationLinkGoogle" class="icon-link">
+            <i class="fab fa-google"></i>
+        </a>
+        <a href="#" id="https://www.flaticon.es/iconos-gratis/facebook" class="icon-link">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" id="registrationLinkPhone" class="icon-link">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+    
+    </a>
+</div>
+
+            </div>
+        </form>
+        <div class="register-link">
+            <p>Ya tienes una cuenta? <a href="#" onclick="showLogin()">Login</a></p>
+        </div>
+    </div>
+
+    <div id="googleForm" class="form-container" style="display: none;">
+    <h2>Inicio de Sesión con Google</h2>
+    <a href="#" onclick="showForm('googleForm')">
+        <img src="images/google-logo.png" alt="Iniciar sesión con Google">
+    </a>
+</div>
+
+
+    <div id="facebookForm" class="form-container" style="display: none;">
+        <h2>Login with Facebook</h2>
+        </div>
+
+    <div id="phoneForm" class="form-container" style="display: none;">
+        <h2>Login
+            <script src="main.js"></script>
+        </body>
+        </html>
+        
